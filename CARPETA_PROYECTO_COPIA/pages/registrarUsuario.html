@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrarse - TWY</title>
+    <meta name="description" content="Crea tu cuenta en The World Is Yours y comienza a invertir en territorios exclusivos.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos del proyecto -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACION PRINCIPAL -->
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-2 px-4 mb-4 border-bottom sticky-top">
+
+        <!-- Logo -->
+        <div class="col-md-3 mb-2 mb-md-0 d-flex align-items-center gap-2">
+            <a href="../index.html" class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                <img src="../img/logo_twy.png" alt="Logo TWY" class="rounded-2" style="height:50px;width:auto;">
+                <span class="fs-5 fw-bold text-success">The World<br>is Yours</span>
+            </a>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <nav>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="../index.html" class="nav-link px-2">Home</a></li>
+                <li><a href="productos.html" class="nav-link px-2">Productos</a></li>
+                <li><a href="../nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                <li><a href="blog.html" class="nav-link px-2">Blog</a></li>
+                <li><a href="#" class="nav-link px-2">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botones de sesion -->
+        <div class="col-md-3 text-end">
+            <a href="iniciarSesion.html" class="btn btn-outline-success me-2">Iniciar Sesion</a>
+            <a href="registrarUsuario.html" class="btn btn-success">Registrar</a>
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL - FORMULARIO DE REGISTRO -->
+    <main class="py-5">
+        <div class="container">
+            <div class="register-container" style="max-width:700px;">
+
+                <!-- Titulo del formulario -->
+                <div class="form-banner">Crear Cuenta</div>
+
+                <form id="formRegistro" novalidate>
+
+                    <!-- Datos personales -->
+                    <p class="section-subtitle">Datos Personales</p>
+
+                    <div class="row g-3 mb-3">
+                        <!-- Nombre -->
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label-custom">Nombre</label>
+                            <input type="text" id="nombre" name="nombre"
+                                class="form-control form-control-custom"
+                                placeholder="Juan" required autocomplete="given-name">
+                        </div>
+                        <!-- Apellido -->
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label-custom">Apellido</label>
+                            <input type="text" id="apellido" name="apellido"
+                                class="form-control form-control-custom"
+                                placeholder="Perez" required autocomplete="family-name">
+                        </div>
+                    </div>
+
+                    <!-- RUT -->
+                    <div class="mb-3">
+                        <label for="rut" class="form-label-custom">RUT</label>
+                        <input type="text" id="rut" name="rut"
+                            class="form-control form-control-custom"
+                            placeholder="12.345.678-9" required autocomplete="off">
+                    </div>
+
+                    <!-- Correo -->
+                    <div class="mb-3">
+                        <label for="correo" class="form-label-custom">Correo Electronico</label>
+                        <input type="email" id="correo" name="correo"
+                            class="form-control form-control-custom"
+                            placeholder="usuario@ejemplo.com" required autocomplete="email">
+                    </div>
+
+                    <!-- Confirmar correo -->
+                    <div class="mb-3">
+                        <label for="confirmarCorreo" class="form-label-custom">Confirmar Correo</label>
+                        <input type="email" id="confirmarCorreo" name="confirmarCorreo"
+                            class="form-control form-control-custom"
+                            placeholder="usuario@ejemplo.com" required autocomplete="email">
+                    </div>
+
+                    <!-- Telefono -->
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label-custom">Telefono</label>
+                        <div class="input-group">
+                            <span class="input-group-text" style="font-size:0.9rem;">+56</span>
+                            <input type="tel" id="telefono" name="telefono"
+                                class="form-control form-control-custom"
+                                placeholder="9 1234 5678" autocomplete="tel">
+                        </div>
+                    </div>
+
+                    <!-- Contrasena -->
+                    <div class="mb-3">
+                        <label for="contrasena" class="form-label-custom">Contrasena</label>
+                        <input type="password" id="contrasena" name="contrasena"
+                            class="form-control form-control-custom"
+                            placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+
+                    <!-- Confirmar contrasena -->
+                    <div class="mb-4">
+                        <label for="confirmarContrasena" class="form-label-custom">Confirmar Contrasena</label>
+                        <input type="password" id="confirmarContrasena" name="confirmarContrasena"
+                            class="form-control form-control-custom"
+                            placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+
+                    <!-- Boton registrar -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-register">REGISTRAR</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PAGINA (FOOTER) -->
+    <footer class="footer-outer" aria-label="Pie de pagina">
+        <div class="container py-4">
+
+            <!-- Navegacion del footer -->
+            <nav aria-label="Navegacion del pie">
+                <ul class="nav col-12 col-md-auto mb-3 justify-content-center">
+                    <li><a href="../index.html" class="nav-link px-2">Home</a></li>
+                    <li><a href="productos.html" class="nav-link px-2">Productos</a></li>
+                    <li><a href="../nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                    <li><a href="blog.html" class="nav-link px-2">Blog</a></li>
+                    <li><a href="#" class="nav-link px-2">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones de sesion -->
+            <div class="text-center mb-3">
+                <a href="iniciarSesion.html" class="btn btn-outline-success me-2">Iniciar Sesion</a>
+                <a href="registrarUsuario.html" class="btn btn-success">Registrar</a>
+            </div>
+
+            <!-- Copyright y boton candado oculto para admin -->
+            <p class="text-center mb-0">
+                &copy; 2026 The World Is Yours, Inc
+                <a href="panelAdmin.html" class="admin-stealth-link"
+                   title="Panel de Administracion" aria-label="Administracion">🔒</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Validaciones TWY -->
+    <script src="../js/validaciones.js"></script>
+    <script>
+        // Activar validaciones en tiempo real
+        TWY.activarCampoRut('rut');
+        TWY.activarCampoEmail('correo');
+
+        // Confirmar correo al perder el foco
+        document.getElementById('confirmarCorreo').addEventListener('blur', function () {
+            const c1 = document.getElementById('correo').value.trim();
+            const c2 = this.value.trim();
+            if (!c2) return;
+            if (c1 === c2) TWY.marcarValido('confirmarCorreo');
+            else TWY.mostrarError('confirmarCorreo', 'Los correos no coinciden.');
+        });
+
+        // Validar telefono al perder el foco
+        document.getElementById('telefono').addEventListener('blur', function () {
+            const tel = this.value.replace(/\D/g, '');
+            if (!this.value.trim()) { TWY.limpiarError('telefono'); return; }
+            if (TWY.validarTelefono(tel)) TWY.marcarValido('telefono');
+            else TWY.mostrarError('telefono', 'Ingresa un numero valido (8-9 digitos).');
+        });
+
+        // Confirmar contrasena al perder el foco
+        document.getElementById('confirmarContrasena').addEventListener('blur', function () {
+            const p1 = document.getElementById('contrasena').value;
+            const p2 = this.value;
+            if (!p2) return;
+            if (p1 === p2) TWY.marcarValido('confirmarContrasena');
+            else TWY.mostrarError('confirmarContrasena', 'Las contrasenas no coinciden.');
+        });
+
+        // Validacion final al enviar
+        document.getElementById('formRegistro').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const rutOk   = TWY.validarRut(document.getElementById('rut').value);
+            const emailOk = TWY.validarEmail(document.getElementById('correo').value);
+            const telOk   = TWY.validarTelefono(document.getElementById('telefono').value.replace(/\D/g, ''));
+            const c1      = document.getElementById('contrasena').value;
+            const c2      = document.getElementById('confirmarContrasena').value;
+            const passOk  = c1 && c1 === c2;
+
+            if (rutOk && emailOk && telOk && passOk) {
+                alert('Registro exitoso (demo).');
+            } else {
+                alert('Por favor corrige los errores antes de continuar.');
+            }
+        });
+    </script>
+
+</body>
+</html>

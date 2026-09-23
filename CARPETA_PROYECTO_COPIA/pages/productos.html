@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos - TWY</title>
+    <meta name="description" content="Explora el catalogo completo de territorios y paises disponibles en The World Is Yours.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos del proyecto -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACION PRINCIPAL -->
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-2 px-4 mb-4 border-bottom sticky-top">
+
+        <!-- Logo -->
+        <div class="col-md-3 mb-2 mb-md-0 d-flex align-items-center gap-2">
+            <a href="../index.html" class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                <img src="../img/logo_twy.png" alt="Logo TWY" class="rounded-2" style="height:50px;width:auto;">
+                <span class="fs-5 fw-bold text-success">The World<br>is Yours</span>
+            </a>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <nav>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="../index.html" class="nav-link px-2">Home</a></li>
+                <li><a href="productos.html" class="nav-link px-2">Productos</a></li>
+                <li><a href="../nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                <li><a href="blog.html" class="nav-link px-2">Blog</a></li>
+                <li><a href="#" class="nav-link px-2">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botones de sesion -->
+        <div class="col-md-3 text-end">
+            <a href="iniciarSesion.html" class="btn btn-outline-success me-2">Iniciar Sesion</a>
+            <a href="registrarUsuario.html" class="btn btn-success">Registrar</a>
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL - CATALOGO DE TERRITORIOS -->
+    <main>
+        <section class="products-section py-5">
+            <div class="container">
+
+                <!-- Titulo de la pagina -->
+                <h1 class="products-section-title text-center mb-5">Catalogo de Territorios</h1>
+
+                <div class="row g-4">
+
+                    <!-- Producto 1 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_suiza.jpg" alt="Suiza Alpina">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=1">Suiza Alpina</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">41,285 km2</span>
+                                    <span class="product-badge-stat">8.7M hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Alta Plusvalia</span>
+                                    <span class="price">$18,500,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_monaco.jpg" alt="Principado de Monaco">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=2">Principado de Monaco</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">2.02 km2</span>
+                                    <span class="product-badge-stat">39K hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Exclusivo</span>
+                                    <span class="price">$28,000,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_islandia.jpg" alt="Islandia Boreal">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=3">Islandia Boreal</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">103,000 km2</span>
+                                    <span class="product-badge-stat">376K hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Sustentable</span>
+                                    <span class="price">$14,200,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_seychelles.jpg" alt="Atolon de Seychelles">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=4">Atolon de Seychelles</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">459 km2</span>
+                                    <span class="product-badge-stat">98K hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Paraiso Tropical</span>
+                                    <span class="price">$11,800,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_nz.jpg" alt="Nueva Zelanda del Sur">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=5">Nueva Zelanda del Sur</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">268,021 km2</span>
+                                    <span class="product-badge-stat">5.1M hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Calidad de Vida</span>
+                                    <span class="price">$16,000,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_singapur.jpg" alt="Singapur Central">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=6">Singapur Central</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">728.6 km2</span>
+                                    <span class="product-badge-stat">5.5M hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Hub Financiero</span>
+                                    <span class="price">$32,000,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_noruega.jpg" alt="Fiordos de Noruega">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=7">Fiordos de Noruega</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">385,207 km2</span>
+                                    <span class="product-badge-stat">5.4M hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Alta Plusvalia</span>
+                                    <span class="price">$19,400,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="col-6 col-md-3">
+                        <article class="product-card h-100">
+                            <div class="product-image">
+                                <img src="../img/territorio_groenlandia.jpg" alt="Groenlandia Artica">
+                            </div>
+                            <div class="product-info p-3">
+                                <h2 class="product-title mb-2">
+                                    <a href="detalle-producto.html?id=8">Groenlandia Artica</a>
+                                </h2>
+                                <div class="product-meta">
+                                    <span class="product-badge-stat">2,166,086 km2</span>
+                                    <span class="product-badge-stat">56.5K hab.</span>
+                                </div>
+                                <div class="product-footer d-flex justify-content-between align-items-center">
+                                    <span class="attributes">Estrategico</span>
+                                    <span class="price">$9,750,000</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div><!-- /row -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA (FOOTER) -->
+    <footer class="footer-outer" aria-label="Pie de pagina">
+        <div class="container py-4">
+
+            <!-- Navegacion del footer -->
+            <nav aria-label="Navegacion del pie">
+                <ul class="nav col-12 col-md-auto mb-3 justify-content-center">
+                    <li><a href="../index.html" class="nav-link px-2">Home</a></li>
+                    <li><a href="productos.html" class="nav-link px-2">Productos</a></li>
+                    <li><a href="../nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                    <li><a href="blog.html" class="nav-link px-2">Blog</a></li>
+                    <li><a href="#" class="nav-link px-2">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones de sesion -->
+            <div class="text-center mb-3">
+                <a href="iniciarSesion.html" class="btn btn-outline-success me-2">Iniciar Sesion</a>
+                <a href="registrarUsuario.html" class="btn btn-success">Registrar</a>
+            </div>
+
+            <!-- Copyright y boton candado oculto para admin -->
+            <p class="text-center mb-0">
+                &copy; 2026 The World Is Yours, Inc
+                <a href="panelAdmin.html" class="admin-stealth-link"
+                   title="Panel de Administracion" aria-label="Administracion">🔒</a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Validaciones TWY -->
+    <script src="../js/validaciones.js"></script>
+
+</body>
+</html>
